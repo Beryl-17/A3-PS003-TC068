@@ -1,0 +1,9 @@
+{
+  "experiment": "fed_iid_full",
+  "mae": 762.8129639665395,
+  "rmse": 988.0625586519395,
+  "communication_bytes": 19200,
+  "rounds": 12,
+  "partition_mode": "iid",
+  "selection_strategy": "full"
+}

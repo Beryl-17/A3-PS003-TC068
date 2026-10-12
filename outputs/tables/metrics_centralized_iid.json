@@ -1,0 +1,9 @@
+{
+  "experiment": "centralized_iid",
+  "mae": 762.8113025813356,
+  "rmse": 988.057894003499,
+  "communication_bytes": 0,
+  "rounds": 12,
+  "partition_mode": "iid",
+  "selection_strategy": "centralized"
+}

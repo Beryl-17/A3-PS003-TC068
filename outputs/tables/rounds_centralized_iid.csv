@@ -1,0 +1,13 @@
+round,train_mse,communication_bytes,cumulative_bytes,experiment
+1,0.731194099761857,0,0,centralized_iid
+2,0.5753900716050284,0,0,centralized_iid
+3,0.49200887029261914,0,0,centralized_iid
+4,0.44190936375225615,0,0,centralized_iid
+5,0.4082089184863636,0,0,centralized_iid
+6,0.3833600722491344,0,0,centralized_iid
+7,0.36380214417778856,0,0,centralized_iid
+8,0.34772688351116543,0,0,centralized_iid
+9,0.3341307179820911,0,0,centralized_iid
+10,0.32240292896642125,0,0,centralized_iid
+11,0.31214001800142044,0,0,centralized_iid
+12,0.3030575399240066,0,0,centralized_iid
