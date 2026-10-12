@@ -1,0 +1,10 @@
+{
+  "experiment": "fed_iid_random_seed7",
+  "mae": 747.0216419266699,
+  "rmse": 965.6369558832642,
+  "communication_bytes": 9600,
+  "rounds": 12,
+  "partition_mode": "iid",
+  "selection_strategy": "random",
+  "seed": 7
+}

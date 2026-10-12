@@ -1,0 +1,10 @@
+{
+  "experiment": "centralized_iid_seed7",
+  "mae": 747.3077298148695,
+  "rmse": 965.7468950541346,
+  "communication_bytes": 0,
+  "rounds": 12,
+  "partition_mode": "iid",
+  "selection_strategy": "centralized",
+  "seed": 7
+}

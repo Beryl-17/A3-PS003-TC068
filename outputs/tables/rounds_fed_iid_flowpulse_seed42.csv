@@ -1,0 +1,13 @@
+round,selected_clients,num_selected,train_mse,communication_bytes,cumulative_bytes,experiment
+1,"1,2",2,0.7336879643905185,800,800,fed_iid_flowpulse_seed42
+2,"3,4",2,0.5720527539749338,800,1600,fed_iid_flowpulse_seed42
+3,"4,2",2,0.4936016096874013,800,2400,fed_iid_flowpulse_seed42
+4,"1,2",2,0.44513970176720075,800,3200,fed_iid_flowpulse_seed42
+5,"3,4",2,0.40489524768861407,800,4000,fed_iid_flowpulse_seed42
+6,"4,3",2,0.3798784176353292,800,4800,fed_iid_flowpulse_seed42
+7,"1,2",2,0.36728239318287037,800,5600,fed_iid_flowpulse_seed42
+8,"4,3",2,0.3441551602885684,800,6400,fed_iid_flowpulse_seed42
+9,"3,2",2,0.3378465976313374,800,7200,fed_iid_flowpulse_seed42
+10,"1,4",2,0.3187038036213463,800,8000,fed_iid_flowpulse_seed42
+11,"2,3",2,0.3156761606615661,800,8800,fed_iid_flowpulse_seed42
+12,"1,2",2,0.30665373751984004,800,9600,fed_iid_flowpulse_seed42

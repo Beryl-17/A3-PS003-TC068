@@ -1,0 +1,10 @@
+{
+  "experiment": "fed_iid_flowpulse_seed42",
+  "mae": 763.4047360337396,
+  "rmse": 988.2911287021593,
+  "communication_bytes": 9600,
+  "rounds": 12,
+  "partition_mode": "iid",
+  "selection_strategy": "flowpulse",
+  "seed": 42
+}

@@ -137,8 +137,9 @@ def main():
         centralized_metrics["rounds"] = args.rounds
         centralized_metrics["partition_mode"] = mode
         centralized_metrics["selection_strategy"] = "centralized"
+        centralized_metrics["seed"] = args.seed
 
-        tag = f"centralized_{mode}"
+        tag = f"centralized_{mode}_seed{args.seed}"
         all_history.append(
             save_run_outputs(tag, centralized_history, centralized_metrics,
                              tables_dir, plots_dir)
@@ -164,8 +165,9 @@ def main():
             metrics["rounds"] = args.rounds
             metrics["partition_mode"] = mode
             metrics["selection_strategy"] = strategy
+            metrics["seed"] = args.seed
 
-            tag = f"fed_{mode}_{strategy}"
+            tag = f"fed_{mode}_{strategy}_seed{args.seed}"
             all_history.append(
                 save_run_outputs(tag, history, metrics, tables_dir, plots_dir)
             )
@@ -180,7 +182,7 @@ def main():
     summary = pd.DataFrame(summary_rows)
     column_order = [
         "partition_mode", "selection_strategy", "mae", "rmse",
-        "communication_bytes", "rounds",
+        "communication_bytes", "rounds", "seed",
     ]
     summary = summary[[col for col in column_order if col in summary.columns]]
     summary.to_csv(tables_dir / "experiment_summary.csv", index=False)
