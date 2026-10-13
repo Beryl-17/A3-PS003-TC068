@@ -95,3 +95,8 @@ In each communication round, FlowPulse examines recent local target variation us
 - [ ] Multi-seed statistical summary
 - [ ] Streamlit demonstration dashboard
 - [ ] Final presentation PDF
+
+      
+## Team Introduction Video
+
+[FlowPulse-FL Team Introduction Video](https://youtu.be/IC9YH1ylTws)
