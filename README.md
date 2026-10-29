@@ -92,7 +92,7 @@ In each communication round, FlowPulse examines recent local target variation us
 - [x] Full, random, and FlowPulse client selection
 - [x] MAE, RMSE, communication bytes, and convergence outputs
 - [x] Experiment plots and CSV/JSON artifacts
-- [ ] Multi-seed statistical summary
+- [x] Multi-seed statistical summary
 - [ ] Streamlit demonstration dashboard
 - [ ] Final presentation PDF
 
