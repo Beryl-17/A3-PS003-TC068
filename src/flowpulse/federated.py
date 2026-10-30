@@ -16,7 +16,11 @@ def fedavg(local_models, sample_counts):
 
 
 def traffic_change_score(client_y):
-    """Higher score means the client's recent target values vary more."""
+    """Mean absolute adjacent difference across the full client target array.
+
+    This static score is not a recent-traffic or live signal. For IID
+    partitions, target order is shuffled, so differences are not chronological.
+    """
     if len(client_y) < 2:
         return 0.0
     return float(np.mean(np.abs(np.diff(client_y))))
@@ -27,7 +31,8 @@ def choose_clients(clients, strategy, round_idx, budget, rng, last_selected,
     """
     full: every client participates.
     random: random limited selection.
-    flowpulse: change-aware selection with simulated readiness and fairness timeout.
+    flowpulse: static target-difference score plus simulated readiness.
+        Timeout-based priority is budget-limited, not a fairness guarantee.
     """
     n_clients = len(clients)
     all_ids = list(range(n_clients))
@@ -64,7 +69,12 @@ def choose_clients(clients, strategy, round_idx, budget, rng, last_selected,
 def run_federated_training(clients, initial_params, rounds=12, local_epochs=3,
                            learning_rate=0.01, strategy="full", budget=2,
                            seed=42):
-    """Train clients locally, aggregate using FedAvg, and log communication/loss."""
+    """Train locally, aggregate with sample-count-weighted FedAvg, and log rounds.
+
+    Communication counts model uploads/downloads only, excluding metadata
+    and network overhead. train_mse is the mean selected-client
+    post-local-training loss, not fixed-set global-model evaluation loss.
+    """
     rng = np.random.default_rng(seed)
     global_params = {key: value.copy() for key, value in initial_params.items()}
     history = []

@@ -1,0 +1,13 @@
+round,train_mse,communication_bytes,cumulative_bytes,experiment
+1,0.5919373881736266,0,0,centralized_iid_seed2026
+2,0.39172457769463187,0,0,centralized_iid_seed2026
+3,0.31114028693440776,0,0,centralized_iid_seed2026
+4,0.27253861368546756,0,0,centralized_iid_seed2026
+5,0.24953574304591783,0,0,centralized_iid_seed2026
+6,0.23304058752840992,0,0,centralized_iid_seed2026
+7,0.21981478458591666,0,0,centralized_iid_seed2026
+8,0.20861695176318507,0,0,centralized_iid_seed2026
+9,0.19890059653809214,0,0,centralized_iid_seed2026
+10,0.19037226867417378,0,0,centralized_iid_seed2026
+11,0.18283984582927743,0,0,centralized_iid_seed2026
+12,0.1761589602225409,0,0,centralized_iid_seed2026

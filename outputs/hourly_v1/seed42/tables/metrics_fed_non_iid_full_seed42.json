@@ -1,0 +1,10 @@
+{
+  "experiment": "fed_non_iid_full_seed42",
+  "mae": 563.9448465334457,
+  "rmse": 809.9173925240855,
+  "communication_bytes": 19200,
+  "rounds": 12,
+  "partition_mode": "non_iid",
+  "selection_strategy": "full",
+  "seed": 42
+}

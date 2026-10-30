@@ -106,14 +106,19 @@ def main():
         choices=["full", "random", "flowpulse"]
     )
     parser.add_argument("--budget", type=int, default=2)
+    parser.add_argument(
+        "--output-dir", default="outputs",
+        help="Directory for this invocation's tables and plots."
+    )
     args = parser.parse_args()
 
     raw_path = Path(args.data)
     if not raw_path.exists():
         raise FileNotFoundError(f"Dataset not found: {raw_path.resolve()}")
 
-    tables_dir = Path("outputs/tables")
-    plots_dir = Path("outputs/plots")
+    output_dir = Path(args.output_dir)
+    tables_dir = output_dir / "tables"
+    plots_dir = output_dir / "plots"
     tables_dir.mkdir(parents=True, exist_ok=True)
     plots_dir.mkdir(parents=True, exist_ok=True)
 
