@@ -402,6 +402,7 @@ convergence.
 - [x] Sample-weighted FedAvg
 - [x] Full, Random, and FlowPulse client selection
 - [x] MAE, RMSE, model-payload accounting, and training histories
+- [x] Multi-seed statistical summary
 - [x] Three-seed summary and artifact reconciliation
 - [x] Local Streamlit dashboard and smoke checks
 - [x] Prediction, history, and run-summary downloads
