@@ -11,10 +11,10 @@ This is not a live traffic service, a physical edge deployment, or a production 
 
 ## Demo and project materials
 
-- Public live demo: pending deployment and verification.
+- Public live demo: [FlowPulse-FL](https://a3-ps003-tc068.onrender.com) — deployed and publicly tested.
 - Repository: https://github.com/aiori-hackathon/A3-PS003-TC068
 - Team introduction video: https://youtu.be/IC9YH1ylTws
-- Existing presentation: `A3-PS003-TC068-FlowPulse-FL-Presentation.pdf`
+- Updated presentation: `A3-PS003-TC068-FlowPulse-FL-Presentation.pdf`
   — final Level-2 accuracy review pending.
 
 ## What the prototype compares
@@ -408,5 +408,5 @@ convergence.
 - [x] Prediction, history, and run-summary downloads
 - [x] Existing team introduction video
 - [ ] Final Level-2 presentation review
-- [ ] Public demo deployment and public-link testing
+- [x] Public demo deployment and public-link testing
 - [ ] Final repository and submission review
